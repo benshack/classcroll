@@ -42,7 +42,7 @@ class ScrollObj {
 
   queryTargets() {
       Array.from(this.classes).forEach(c => {
-          c.target = c.target ? document.querySelector(`${target}`) : this.elem;
+          c.target = c.target ? document.querySelector(`${c.target}`) : this.elem;
       })
   }
 
